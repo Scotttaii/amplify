@@ -28,10 +28,11 @@ function App() {
         console.log("error" + error);
       }
     }
-    getSQS();
-    sendSQS();
+    // getSQS();
+    // sendSQS();
     setInterval(function () {
-      sendSQS();
+      // sendSQS();
+      console.log("sending request to aws api");
     }, 300000);
   }, []);
   return (
